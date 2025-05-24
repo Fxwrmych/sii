@@ -1,10 +1,51 @@
-*{
+/* app.css */
+
+/* Общие стили для body */
+body {
   margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #121212; /* темный фон */
+  color: #eee; /* светлый текст */
 }
 
-body {
-  background: var(--tg-theme-bg-color);
-  color: var(--tg-theme-text-color);
+/* Стили для контейнера WebApp */
+.app-container {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 15px;
+  background: #1e1e1e;
+  border-radius: 10px;
+  box-shadow: 0 0 15px rgba(0,0,0,0.5);
+}
+
+/* Кнопки */
+button {
+  background-color: #6200ee;
+  color: white;
+  border: none;
+  border-radius: 6px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #3700b3;
+}
+
+/* Заголовки */
+h1, h2, h3 {
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+
+/* Ссылки */
+a {
+  color: #bb86fc;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
 }
